@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title="query image"
+        h1=tagvalue
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+        script(src='/javascripts/myscript.js')
+    body
+        script.
+            tagvalue="#{tagvalue}"
+            query=query_image(tagvalue)
+        div(id="result")
+    
